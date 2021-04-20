@@ -1,0 +1,5 @@
+<%= form_for([@todo_list, @todo_list.todo_items.build]) do |f| %>
+ <%= f.text_field :content, placeholder: 'New Todo' %>
+ <%= f.number_field :priority, in: 1..4, step: 1, placeholder: 'Priority 1 - 4' %>
+ <%= f.submit %>
+<% end %>

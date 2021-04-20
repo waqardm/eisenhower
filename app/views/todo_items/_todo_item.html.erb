@@ -1,0 +1,7 @@
+<p>
+  <strong>Todo: </strong><%= todo_item.content %>
+  <strong>Priority: </strong> <%= todo_item.priority %> &nbsp;
+  <%= link_to "Delete", todo_list_todo_item_path(@todo_list, todo_item.id), method: :delete, data: { confirm: "Are you sure?" } %>
+</p>
+
+
