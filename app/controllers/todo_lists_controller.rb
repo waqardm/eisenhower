@@ -9,7 +9,7 @@ class TodoListsController < ApplicationController
   end
 
   # GET /todo_lists/1 or /todo_lists/1.json
-  def show
+  def show 
   end
 
   # GET /todo_lists/new
@@ -53,7 +53,7 @@ class TodoListsController < ApplicationController
   def destroy
     @todo_list.destroy
     respond_to do |format|
-      format.html { redirect_to todo_lists_url, notice: "Todo list was successfully destroyed." }
+      format.html { redirect_to :root, notice: "Todo list was successfully destroyed." }
       format.json { head :no_content }
     end
   end
